@@ -7,7 +7,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 import pytest
 import allure
-import time
 
 
 @pytest.mark.parametrize("day", [
@@ -16,7 +15,6 @@ import time
 ])
 
 def test_bootstrap1(driver,day):
-    wait = WebDriverWait(driver, 10)
 
     with pytest.allure.step('Open link'):
         driver.get('https://www.seleniumeasy.com/test/bootstrap-date-picker-demo.html')

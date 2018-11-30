@@ -17,6 +17,7 @@ def test_second_two(driver):
 
     with pytest.allure.step('Open link'):
         driver.get('https://www.seleniumeasy.com/test/table-records-filter-demo.html')
+
     with pytest.allure.step('Find and click Green button'):
         driver.find_element_by_xpath("//button[contains(text(),'Green')]").click()
 

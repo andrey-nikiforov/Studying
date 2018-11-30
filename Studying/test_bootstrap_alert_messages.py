@@ -7,12 +7,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 import pytest
 import allure
-import time
 
 
 
 def test_bootstrap1(driver):
-    wait = WebDriverWait(driver, 10)
 
     with pytest.allure.step('open link'):
         driver.get('https://www.seleniumeasy.com/test/bootstrap-alert-messages-demo.html')
