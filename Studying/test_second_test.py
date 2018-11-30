@@ -9,14 +9,13 @@ import pytest
 import allure
 import time
 
-a=1
-b=223
+
+
 @pytest.mark.parametrize("a,b,sum", [
     (3,5,8),
     (100500,-100500,0),
     (0,0,0),
 ])
-
 def test_second_two(driver,a,b,sum):
 
     with allure.step('Open link'):
