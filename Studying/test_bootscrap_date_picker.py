@@ -12,7 +12,8 @@ import allure
 @pytest.mark.parametrize("day", [
     (12),
     (20)
-])2
+])
+###### sdgdfhdfh
 def test_bootstrap1(driver,day):
 
     with pytest.allure.step('Open link'):
